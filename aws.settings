@@ -1,0 +1,23 @@
+#
+# This configuration file is used by the launch.py utility. These settings
+# are either per-user (and can't be shared), or are secret and should not be
+# checked-into source control.
+#
+
+[EC2]
+# The AccessKeyId and SecretAccessKey are used to connect to
+# the AWS EC2 service. They can be obtained from the EC2
+# web interface.
+AccessKeyId = ...
+SecretAccessKey = ...
+
+# Which availability zone we should create the instances in
+# This is configurable depending on user preferences.
+AvailabilityZone = us-west-2
+#AvailabilityZone = us-east-1
+
+# The name of the SSH Key Pair to use when creating the EC2 instances
+SSHKeyPair = this-pair
+
+# The local file containing the SSH key pair
+SSHKeyPairFile = /root/this-pair.pem
